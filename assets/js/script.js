@@ -81,7 +81,9 @@ console.log(slidesImages);
 
 
 // intercept click on the next icon 
-nextEl.addEventListener('click', function () {
+nextEl.addEventListener('click', next)
+
+function next(){
     console.log('cliccato su next');
 
     // select the current slide
@@ -124,13 +126,16 @@ nextEl.addEventListener('click', function () {
     nextThumb.classList.add('active')
 
 
-})
+}
+
 
 // intercept click on the prev icon
 
 
 // activeSlide = 0
-prevEl.addEventListener('click', function () {
+prevEl.addEventListener('click', prev)
+
+function prev(){
     console.log('cliccato su prev');
 
 
@@ -157,4 +162,4 @@ prevEl.addEventListener('click', function () {
     console.log(nextSlide);
     // add the active class to the next slide
     nextSlide.classList.add('active')
-})
+}
